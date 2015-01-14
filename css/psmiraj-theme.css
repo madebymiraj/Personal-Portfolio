@@ -174,8 +174,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .para2{
-  background: #87D37C url('../img/main.jpg') no-repeat bottom center;
-  background-size: cover;
+  background: url('../img/main.jpg') no-repeat bottom center;
+  background-size: contain;
   background-attachment: fixed;
   height: 450px;
   padding-top: 25px;
@@ -365,16 +365,15 @@ body {
 
 .cbp-qtrotator {
   position: relative;
-  margin: 3em auto 5em auto;
   max-width: 800px;
   width: 100%;
-  min-height: 400px;
+  margin: 0 auto;
 }
 
 .cbp-qtrotator .cbp-qtcontent {
   position: absolute;
   min-height: 200px;
-  padding: 2em 0;
+  padding: 5em 0;
   top: 0;
   z-index: 0;
   opacity: 0;
@@ -424,10 +423,6 @@ body {
   font-size: 1.4em;
   color: #FFFFFF;
   font-weight: 300;
-}
-
-.cbp-qtrotator blockquote footer:before {
-  content: '― ';
 }
 
 /* Example for media query */
