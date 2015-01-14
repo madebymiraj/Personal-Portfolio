@@ -1,0 +1,364 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600,300);
+
+body{
+  background-color: #DADFE1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #87D37C;
+  border-color: #87D37C;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #58C247;
+  border-color: #58C247;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+  color: #fff;
+  background-color: #58C247;
+  border-color: #58C247;
+}
+
+.btn-default {
+  color: #87D37C;
+  background-color: #fff;
+  border-color: #87D37C;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+  border-radius: 0px;
+}
+
+.navbar-default{
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #DADFE1;
+}
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0px;
+  max-width: 1170px;
+  margin: 0 auto;
+  width: inherit;
+}
+
+.navbar-default .navbar-brand {
+  font-weight: 700;
+}
+
+.navbar-header a{
+  color: #777;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 20px;
+}
+
+#trigger-overlay2{
+  cursor: pointer;
+}
+
+.nav li{
+  border-left: 1px solid #DADFE1;
+  text-transform: uppercase;
+  min-width: 50px;
+  text-align: center;
+  display: inline-block;
+}
+.nav li:hover {
+  background-color: #87D37C;
+}
+
+.nav .ln:hover{
+  background: #007bb6;
+}
+.nav .gh:hover{
+  background: #4183C4;
+}
+.nav .tw:hover{
+  background: #4099FF;
+}
+.nav .ig:hover{
+  background: #517fa4;
+}
+.nav .sp:hover{
+  background: #81b71a;
+}
+.nav .db:hover{
+  background: #C73B6F;
+}
+
+
+.navbar-default .navbar-nav>li>a:hover{
+  color: #FFFFFF;
+}
+
+.feature img {
+  position: absolute;
+  bottom: -500px;
+}
+
+.feature{
+  background: #FFFFFF url(http://subtlepatterns.com/patterns/tiny_grid.png) 50% 26%;
+  background-attachment: fixed;
+  min-height: 499px;
+  color: #777777;
+  margin-top: 40px;
+}
+
+.feature h1{
+  font-weight: 700;
+  margin-top: 70px;
+  color: #87D37C;
+}
+
+.hoverblock{
+  position: relative;
+  height: 150px;
+  text-transform: uppercase;
+  line-height: 3em;
+  color: #999;
+}
+.vertical-align{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: table;
+  margin-left: -15px;
+}
+.vertical-align-middle{
+  display: table-cell;
+  vertical-align: middle;
+}
+.hoverblock h5{
+  margin: 0px;
+}
+.hoverblock:hover{
+  background-color: #303030;
+  color: #FFFFFF;
+  border: none;
+}
+
+.headline{
+  display: table;
+  min-height: 300px;
+}
+
+.headline2{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.para1{
+  background: #202020;
+  text-align: center;
+  color: #DADFE1;
+}
+
+.para1 p{
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.para2{
+  background: #87D37C url('../img/main.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+  padding-top: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  position: relative
+}
+
+.para2 h1{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.para3{
+  background: #FFFFFF;
+  color: #777777;
+}
+.para3 h1{
+  text-align: center;
+}
+.featured-videos{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.nopadding {
+   padding: 0 !important;
+}
+
+
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(135, 211, 124, 0.9);
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	outline: none;
+	z-index: 100;
+  background: none;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-size: 54px;
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #f0f0f0;
+}
+
+/* Effects */
+body {
+	background: #ddd;
+}
+
+.movetest {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.movetest.overlay-open {
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8);
+}
+
+.overlay-contentscale {
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	-webkit-transition: -webkit-transform 0.5s, visibility 0s 0.5s;
+	transition: transform 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-contentscale.open {
+	visibility: visible;
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+/***** MODAL PROPERTIES *****/
+ .modal-content {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background:transparent;
+    border:none;
+    outline:none;
+}
+.modal-content iframe {
+    border:none;
+    padding:0;
+    margin:0;
+}
+.close {
+    color: #FFFFFF;
+    text-shadow: none;
+    margin:-20px 0 0 0;
+}
+/***** MEDIA QUERIES *****/
+ @media only screen and (max-width: 641px) {
+    /***** MODAL PROPERTIES *****/
+    .modal-body {
+        height:100px;
+        padding:0;
+        margin: 0;
+    }
+    .modal-content {
+        padding:0;
+        margin: 0;
+    }
+    .modal-dialog {
+        position: relative;
+        width: auto;
+        margin: 15px;
+    }
+    .close {
+        margin:-12px 0 0 0;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /***** MODAL PROPERTIES *****/
+    .close {
+        color: #FFFFFF;
+        margin:30px -43px -20px 100px;
+    }
+}
