@@ -64,7 +64,7 @@
       </div>
       <div class="row">
           <div class="col-md-4 hoverblock">
-            <div class="vertical-align"><div class="vertical-align-middle"><i class="fa fa-smile-o fa-2x"></i><h5>User Experience Design</h5></div></div>
+            <div class="vertical-align"><div class="vertical-align-middle"><i class="fa fa-users fa-2x"></i><h5>User Experience Design</h5></div></div>
           </div>
           <div class="col-md-4 hoverblock">
             <div class="vertical-align"><div class="vertical-align-middle"><i class="fa fa-tablet fa-2x"></i><h5>User Interface Design</h5></div></div>
@@ -86,7 +86,47 @@
     
     <div class="container para2">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3">
+        <div class="col-md-12 main">
+
+          <div id="cbp-qtrotator" class="cbp-qtrotator">
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>It’s not just what it looks like and feels like. Design is how it works.</p>
+                <footer>Steve Jobs</footer>
+              </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>We will never have a perfect world, but it's not romantic or naïve to work toward a better one.</p>
+                <footer>Steven Pinker</footer>
+              </blockquote>
+            </div> 
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>The only thing worse than being blind is having sight, but no vision.</p>
+                <footer>Hellen Keller</footer>
+              </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality.</p>
+                <footer>Walt Disney</footer>
+              </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>While some see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.</p>
+                <footer>Apple, "Crazy Ones" Ad Campaign</footer>
+              </blockquote>
+            </div>
+            <div class="cbp-qtcontent">
+              <blockquote>
+                <p>What you do for yourself dies with you when you leave this world, what you do for others lives on forever.</p>
+                <footer>Sir Ken Robinson, The Element</footer>
+              </blockquote>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -219,10 +259,11 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/jquery.cbpQTRotator.min.js"></script>
     <script>
       $(document).ready(
         function() { 
-          $("html").niceScroll({cursorwidth:"10", cursorcolor:"#DDD", cursorborder:"0", background:"#202020", scrollspeed:65, cursorborderradius:"0px"});
+          $("html").niceScroll({cursorwidth:"10", cursorcolor:"#DDD", cursorborder:"0", background:"#202020", scrollspeed:"100", cursorborderradius:"0px"});
         }
       );
     </script>
@@ -247,6 +288,26 @@
               });
           });
       }
+    </script>
+    <script>
+      $( function() {
+        /*
+        - how to call the plugin:
+        $( selector ).cbpQTRotator( [options] );
+        - options:
+        {
+          // default transition speed (ms)
+          speed : 700,
+          // default transition easing
+          easing : 'ease',
+          // rotator interval (ms)
+          interval : 8000
+        }
+        - destroy:
+        $( selector ).cbpQTRotator( 'destroy' );
+        */
+        $( '#cbp-qtrotator' ).cbpQTRotator();
+      } );
     </script>
   </body>
 </html>

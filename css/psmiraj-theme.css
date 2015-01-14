@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .para2{
-  background: #87D37C url('../img/main.jpg') no-repeat center center;
+  background: #87D37C url('../img/main.jpg') no-repeat bottom center;
   background-size: cover;
   background-attachment: fixed;
   height: 450px;
@@ -361,4 +361,84 @@ body {
         color: #FFFFFF;
         margin:30px -43px -20px 100px;
     }
+}
+
+.cbp-qtrotator {
+  position: relative;
+  margin: 3em auto 5em auto;
+  max-width: 800px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+  position: absolute;
+  min-height: 200px;
+  padding: 2em 0;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+  position: relative; 
+  z-index: 100;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+  content: " ";
+  display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+  clear: both;
+}
+
+.cbp-qtprogress {
+  display: none;
+}
+
+.cbp-qtrotator blockquote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cbp-qtrotator blockquote p {
+  font-size: 2em;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0.4em 0 1em;
+}
+
+.cbp-qtrotator blockquote footer {
+  font-size: 1.4em;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.cbp-qtrotator blockquote footer:before {
+  content: '― ';
+}
+
+/* Example for media query */
+@media screen and (max-width: 30.6em) { 
+
+  .cbp-qtrotator {
+    font-size: 70%;
+  }
+
+  .cbp-qtrotator img {
+    width: 80px;
+  }
+
 }
