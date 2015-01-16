@@ -114,9 +114,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .feature{
   background: #FFFFFF url(http://subtlepatterns.com/patterns/tiny_grid.png) 50% 26%;
   background-attachment: fixed;
-  min-height: 499px;
+  min-height: 500px;
   color: #777777;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .feature h1{
