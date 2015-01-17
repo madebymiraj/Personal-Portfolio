@@ -10,6 +10,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: 1.5;
 }
 
+a {
+  color: #58C247;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  color: #58C247;
+  text-decoration: underline;
+}
+
 .btn:focus,.btn:active {
    outline: none !important;
 }
@@ -118,11 +128,35 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #777777;
   margin-top: 50px;
 }
-
 .feature h1{
   font-weight: 700;
   margin-top: 70px;
   color: #87D37C;
+}
+
+.aboutme{
+  background: #FFFFFF;
+  min-height: 500px;
+  color: #777777;
+  margin-top: 50px;
+}
+.aboutme h1{
+  font-weight: 700;
+  margin-top: 70px;
+  color: #87D37C;
+}
+.aboutme img{
+  margin: 25px;
+}
+
+.aboutme2{
+  background: #EDEDED;
+  min-height: 500px;
+  color: #5B5B5B;
+}
+.aboutme2 h1, .aboutme2 h3{
+  font-weight: 700;
+  color: #303030;
 }
 
 .hoverblock{
