@@ -151,12 +151,15 @@ a:hover, a:focus, a:active {
 
 .aboutme2{
   background: #EDEDED;
-  min-height: 500px;
   color: #5B5B5B;
+  padding-bottom: 25px;
 }
-.aboutme2 h1, .aboutme2 h3{
+.aboutme2 h1{
   font-weight: 700;
   color: #303030;
+}
+.aboutme2 h4{
+  font-weight: 500;
 }
 
 .hoverblock{
