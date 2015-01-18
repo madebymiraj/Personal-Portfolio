@@ -499,9 +499,10 @@ body {
 
 .col-md-12 figure figcaption {
   padding: 2em;
-  color: #fff;
+  color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  font-weight: 700;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -550,7 +551,6 @@ body {
   cursor: pointer;
   background: #EDEDED;
   height: 350px;
-  width: 585px;
 }
 .hoverwork:hover{
   background: #87D37C;
@@ -566,18 +566,16 @@ figure.effect-sadie figcaption::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -webkit-linear-gradient(top, rgba(135, 211, 124,0) 0%, rgba(135, 211, 124,1) 100%);
-  background: linear-gradient(to bottom, rgba(135, 211, 124,0) 0%, rgba(135, 211, 124,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(135, 211, 124,1) 100%, rgba(135, 211, 124,1) 100%);
+  background: linear-gradient(to bottom, rgba(135, 211, 124,1) 100%, rgba(135, 211, 124,1) 100%);
   content: '';
   opacity: 0;
-  -webkit-transform: translate3d(0,50%,0);
-  transform: translate3d(0,50%,0);
+  -webkit-transform: translate3d(0,75%,0);
+  transform: translate3d(0,75%,0);
 }
 
 figure.effect-sadie h2 {
-  position: absolute;
-  top: 50%;
-  left: 0;
+ 
   width: 100%;
   color: #FFFFFF;
   -webkit-transition: -webkit-transform 0.35s, color 0.35s;
@@ -614,4 +612,17 @@ figure.effect-sadie:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+
+.effect-sadie figcaption img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-height: 0px;
+  display: inline-block;
+  opacity: 1;
 }
