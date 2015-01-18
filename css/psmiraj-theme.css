@@ -127,6 +127,7 @@ a:hover, a:focus, a:active {
   min-height: 500px;
   color: #777777;
   margin-top: 50px;
+  padding-bottom: 25px;
 }
 .feature h1{
   font-weight: 700;
@@ -136,9 +137,9 @@ a:hover, a:focus, a:active {
 
 .aboutme{
   background: #FFFFFF;
-  min-height: 500px;
   color: #777777;
   margin-top: 50px;
+  padding-bottom: 25px;
 }
 .aboutme h1{
   font-weight: 700;
@@ -566,14 +567,6 @@ body {
 .col-md-6 figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
-}
-.hoverwork{
-  cursor: pointer;
-  background: #EDEDED;
-  height: 350px;
-}
-.hoverwork:hover{
-  background: #87D37C;
 }
 
 /*---------------*/
