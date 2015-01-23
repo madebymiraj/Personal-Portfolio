@@ -640,3 +640,34 @@ figure.effect-sadie:hover p {
   display: inline-block;
   opacity: 1;
 }
+
+.caseintro{
+  background-color: #FFFFFF;
+  margin-top: 50px;
+}
+.intrologo{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.intrologo img{
+  display: inline-block;
+}
+.intrologo h1{
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.intrologo h3{
+  margin-top: 0px;
+  font-weight: 300;
+}
+.introdesc{
+  border-top: 1px solid #EDEDED;
+  padding-bottom: 25px;
+}
+.introdesc ul{
+  list-style: none;
+}
+.introdesc .col-md-6{
+  padding-left: 0px;
+}
