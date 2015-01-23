@@ -143,47 +143,5 @@
         }
       );
     </script>
-    <script>
-       autoPlayYouTubeModal();
-
-      //FUNCTION TO GET AND AUTO PLAY YOUTUBE VIDEO FROM DATATAG
-      function autoPlayYouTubeModal() {
-          var trigger = $("body").find('[data-toggle="modal"]');
-          trigger.click(function () {
-              var theModal = $(this).data("target"),
-                  videoSRC = $(this).attr("data-theVideo"),
-                  videoSRCauto = videoSRC + "?autoplay=1&amp;showinfo=0";
-              $(theModal + ' iframe').attr('src', videoSRCauto);
-              $(theModal + ' iframe').attr('iv_load_policy', '3');
-              $(theModal + ' iframe').attr('allowfullscreen', '');
-              $(theModal + ' button.close').click(function () {
-                  $(theModal + ' iframe').attr('src', videoSRC);
-              });
-              $('.modal').click(function () {
-                  $(theModal + ' iframe').attr('src', videoSRC);
-              });
-          });
-      }
-    </script>
-    <script>
-      $( function() {
-        /*
-        - how to call the plugin:
-        $( selector ).cbpQTRotator( [options] );
-        - options:
-        {
-          // default transition speed (ms)
-          speed : 700,
-          // default transition easing
-          easing : 'ease',
-          // rotator interval (ms)
-          interval : 8000
-        }
-        - destroy:
-        $( selector ).cbpQTRotator( 'destroy' );
-        */
-        $( '#cbp-qtrotator' ).cbpQTRotator();
-      } );
-    </script>
   </body>
 </html>
