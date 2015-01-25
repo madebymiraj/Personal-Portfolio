@@ -671,3 +671,49 @@ figure.effect-sadie:hover p {
 .introdesc .col-md-6{
   padding-left: 0px;
 }
+.dark-alt{
+  background: #EDEDED;
+  color: #5B5B5B;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+.dark-alt .center h1{
+  font-weight: 700;
+  margin: 0;
+}
+.dark-alt .center h3{
+  margin-top: 0px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.light-alt .center p{
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+.dark-alt h4{
+  color: #ee3763;
+}
+.light-alt{
+  background: #FFFFFF;
+  color: #5B5B5B;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+.light-alt .center h1{
+  font-weight: 700;
+  margin: 0;
+}
+.light-alt .center h3{
+  margin-top: 0px;
+  font-weight: 300;
+}
+.light-alt h4{
+  color: #ee3763;
+}
+.gold{
+  color: #ffc600;
+}
+
+.center{
+  text-align: center;
+}
