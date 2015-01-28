@@ -699,7 +699,7 @@ figure.effect-sadie:hover p {
   padding-bottom: 50px;
   padding-top: 25px;
 }
-.light-alt .center h1{
+.light-alt .center h1, .light-alt .center h2{
   font-weight: 700;
   margin: 0;
 }
