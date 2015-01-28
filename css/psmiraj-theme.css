@@ -5,6 +5,16 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #58C246;
+}
+
+::selection {
+    color:  white; 
+    background: #58C246;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 600;
   line-height: 1.5;
@@ -489,7 +499,7 @@ body {
   cursor: pointer;
   margin-top: 50px;
 }
-.col-md-6 figure {
+.col-md-6 figure, .col-md-4 figure {
   position: relative;
   float: left;
   overflow: hidden;
@@ -498,8 +508,10 @@ body {
   cursor: pointer;
 }
 
+
 .col-md-12 figure img,
-.col-md-6 figure img {
+.col-md-6 figure img,
+.col-md-4 figure img{
   position: relative;
   display: block;
   min-height: 100%;
@@ -508,7 +520,8 @@ body {
 }
 
 .col-md-12 figure figcaption,
-.col-md-6 figure figcaption {
+.col-md-6 figure figcaption, 
+.col-md-4 figure figcaption{
   padding: 2em;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -521,14 +534,18 @@ body {
 .col-md-12 figure figcaption::before,
 .col-md-12 figure figcaption::after,
 .col-md-6 figure figcaption::before,
-.col-md-6 figure figcaption::after {
+.col-md-6 figure figcaption::after,
+.col-md-4 figure figcaption::before,
+.col-md-4 figure figcaption::after  {
   pointer-events: none;
 }
 
 .col-md-12 figure figcaption,
 .col-md-12 figure figcaption > a,
 .col-md-6 figure figcaption,
-.col-md-6 figure figcaption > a {
+.col-md-6 figure figcaption > a,
+.col-md-4 figure figcaption,
+.col-md-4 figure figcaption > a  {
   position: absolute;
   top: 0;
   left: 0;
@@ -538,7 +555,8 @@ body {
 
 /* Anchor will cover the whole item by default */
 .col-md-12 figure figcaption > a,
-.col-md-6 figure figcaption > a {
+.col-md-6 figure figcaption > a,
+.col-md-4 figure figcaption > a  {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -547,24 +565,29 @@ body {
 }
 
 .col-md-12 figure h2,
-.col-md-6 figure h2 {
+.col-md-6 figure h2,
+.col-md-4 figure h2 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
 .col-md-12 figure h2 span,
-.col-md-6 figure h2 span {
+.col-md-6 figure h2 span,
+.col-md-4 figure h2 span {
   font-weight: 800;
 }
 
 .col-md-12 figure h2,
 .col-md-12 figure p,
 .col-md-6 figure h2,
-.col-md-6 figure p {
+.col-md-6 figure p,
+.col-md-4 figure h2,
+.col-md-4 figure p {
   margin: 0;
 }
 .col-md-12 figure p,
-.col-md-6 figure p {
+.col-md-6 figure p,
+.col-md-4 figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
