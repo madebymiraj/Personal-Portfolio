@@ -736,6 +736,13 @@ figure.effect-sadie:hover p {
 .gold{
   color: #ffc600;
 }
+.white-bg{
+  background-color: #FFFFFF;
+}
+.spacer{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
 .center{
   text-align: center;
