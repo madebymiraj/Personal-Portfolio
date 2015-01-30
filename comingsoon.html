@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="nl-blurred">
+  <body>
     
     <div class="movetest">
 
@@ -39,23 +39,16 @@
           </nav>
       </div>
     
-      <div class="container contactform">
-        <div class="row spacer">
+      <div class="container white-bg">
+        <div class="row" style="margin-top: 50px;">
           <div class="col-md-12">
-            <form id="nl-form" class="nl-form">
-              Hey Miraj!<br>
-              My name is <input required type="text" value="" placeholder="Insert Name Here" data-subline="For example: <em>John Jacob Jingleheimer Schmidt</em>"/>. I am reaching out to you today because I
-              <select>
-                <option value="1" selected>really admire your work</option>
-                <option value="2">would like to hire you</option>
-                <option value="3">have a question for you</option>
-                <option value="4">just wanted to get in touch</option>
-              </select>.  I know you're busy, but when you get a chance please email me back at <input required type="text" value="" placeholder="username@email.com" data-subline="For example: <em>jjschmidt@jingleheimer.com</em>"/>. I look forward to hearing back from you soon. Thank you!
-              <div class="nl-submit-wrap">
-                <button class="nl-submit" type="submit">Submit Your Message</button>
-              </div>
-              <div class="nl-overlay"></div>
-            </form>
+            <h1>That awkward moment when you add a blog page to your UX portfolio that takes the user to a useless page with a bunch of unless text, wasting the user's useful time, all because you didn't consume enough coffee and pull enough all-nighters in order to complete the portfolio entirely before deciding make it live.</h1>
+          </div>
+          <div class="col-md-12">
+            <h2 style="color:#5b5b5b; font-weight: 500;">I wish that I could give you a refund for your click and I sincerely apologize for wasting your time, but I can promise you that I am actively working on completing my blog. So, please check back later to see what I have to write about.</h2>
+          </div>
+          <div class="col-md-12" style="margin-bottom: 25px;">
+            <h2 style="color:#7b7b7b; font-weight: 500;">Thank you for understanding!</h2>
           </div>
         </div>
       </div>   
@@ -108,16 +101,12 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/nlform.js"></script>
     <script>
       $(document).ready(
         function() { 
           $("html").niceScroll({cursorwidth:"10", cursorcolor:"#DDD", cursorborder:"0", background:"#202020", scrollspeed:"100", cursorborderradius:"0px"});
         }
       );
-    </script>
-    <script>
-      var nlform = new NLForm( document.getElementById( 'nl-form' ) );
     </script>
   </body>
 </html>
