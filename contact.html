@@ -40,20 +40,27 @@
       </div>
     
       <div class="container contactform">
+
         <div class="row spacer">
           <div class="col-md-12">
-            <form id="nl-form" class="nl-form">
+            <form id="nl-form" class="nl-form" method="post">
+     
               Hey Miraj!<br>
-              My name is <input required type="text" value="" placeholder="Insert Name Here" data-subline="For example: <em>John Jacob Jingleheimer Schmidt</em>"/>. I am reaching out to you today because I
-              <select>
+              My name is <input type="text" name="name" id="name" placeholder="Insert Name Here" data-subline="For example: <em>John Jacob Jingleheimer Schmidt</em>" value=""/>. I am reaching out to you today because I
+              <select id="message" name="message">
                 <option value="1" selected>really admire your work</option>
                 <option value="2">would like to hire you</option>
                 <option value="3">have a question for you</option>
                 <option value="4">just wanted to get in touch</option>
-              </select>.  I know you're busy, but when you get a chance please email me back at <input required type="text" value="" placeholder="username@email.com" data-subline="For example: <em>jjschmidt@jingleheimer.com</em>"/>. I look forward to hearing back from you soon. Thank you!
+              </select>.  I know you're busy, but when you get a chance please email me back at <input id="email" name="email" type="text" value="" placeholder="username@email.com" data-subline="For example: <em>jjschmidt@jingleheimer.com</em>"/>. I look forward to hearing back from you soon. Thank you!
+              
+              <input type="hidden" name="silly" id="silly" value="http://" />
+              <input type="hidden" name="human" id="human" value="" />
+              
               <div class="nl-submit-wrap">
-                <button class="nl-submit" type="submit">Submit Your Message</button>
+                <button class="nl-submit" id="submit" type="submit" onClick="window.location.reload()">Submit Your Message</button>
               </div>
+              
               <div class="nl-overlay"></div>
             </form>
           </div>
@@ -109,6 +116,7 @@
     <script src="js/classie.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/nlform.js"></script>
+    <script src="js/form-ajax.js"></script>
     <script>
       $(document).ready(
         function() { 
